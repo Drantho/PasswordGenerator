@@ -94,3 +94,11 @@ function getDigit() {
 function reloadPage(){
     location.reload();
 }
+
+function showCriteria(){
+    document.getElementById("passwordLength").innerHTML = passwordLength;
+    document.getElementById("useLowerCase").innerHTML = lowerCaseCriteria;
+    document.getElementById("useUpperCase").innerHTML = upperCaseCriteria;
+    document.getElementById("useNumerals").innerHTML = numberCriteria;
+    document.getElementById("useSpecialCharacters").innerHTML = specialCriteria;
+}
