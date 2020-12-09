@@ -1,4 +1,43 @@
-.resultWindow{
-    border: 2px solid black;
-    padding: 25px 50px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: Roboto;
+    background-image: url(../images/1140-fd-is-coding-boot-camp-for-you.imgcache.rev4c79daf5768ae52a73a46e372b5bc2b4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.85);
 }
+
+a{
+    cursor: pointer;
+}
+
+h1{
+    margin: 30px auto;
+}
+
+h2{
+    margin: 20px auto;
+}
+
+button{
+    margin: 25px 8px 0 0;
+    color: black;
+    background-color: white !important;
+}
+
+i{
+    position: relative;
+    top: -2px;
+}
+
+.resultWindow{
+    padding: 25px 50px;
+    border: 0.1px solid rgba(255,255,255,0.2);
+    background-color: rgba(230,230,255,0.2);
+    backdrop-filter: blur(30px);
+    border-radius: 5px;;
+    margin: 25px auto;
+}
+
