@@ -4,7 +4,7 @@
 /* set body background image and stretch to fit screen, set text color and shadow for visibility */
 body{
     font-family: Roboto;
-    background-image: url(../images/1140-fd-is-coding-boot-camp-for-you.imgcache.rev4c79daf5768ae52a73a46e372b5bc2b4.jpg);
+    background-image: url(../images/bg01.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -44,7 +44,7 @@ i{
     padding: 25px 50px;
     border: 0.1px solid rgba(255,255,255,0.2);
     background-color: rgba(230,230,255,0.2);
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(10px);
     border-radius: 5px;;
     margin: 25px auto;
 }

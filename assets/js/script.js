@@ -40,6 +40,7 @@ function setCriteria() {
 // main function loops through getDigit() passwordLength times
 function generatePassword() {
 
+    console.log("generatePassword() fires.");
     // check if user has set criteria yet - call setCriteria() if not
     if (passwordLength !== undefined) {
 
