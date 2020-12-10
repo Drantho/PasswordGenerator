@@ -12,20 +12,20 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div class="container">
+    <main class="container">
         <!-- main display window -->
-        <div class="resultWindow">
-            <div class="row">
+        <article class="resultWindow">
+            <section class="row">
                 <div class="col-md-12">
                     <h1 class="text-center">Random Password Generator</h1>
                 </div>
-            </div>
-            <div class="row">
+            </section>
+            <section class="row">
                 <div class="col-md-12">
                     <h2>Password:</h2>
                 </div>
-            </div>
-            <div class="row">
+            </section>
+            <section class="row">
                 <div class="col-md-11">        
                     <!-- password displayed here -->
                     <textarea id="passwordResult" class="form-control"></textarea>            
@@ -36,59 +36,59 @@
                         <i class="far fa-copy fa-4x"></i>
                     </a>   
                 </div>
-            </div>  
+            </section>  
             <h2>Criteria</h2>
             <!-- User selected criteria goes in this grid section -->
-            <div class="row">
+            <section class="row">
                 <div class="col-md-3">
                     <strong>Password Length:</strong>
                 </div>
                 <div class="col-md-9" id="passwordLength">
 
                 </div>
-            </div>
-            <div class="row">
+            </section>
+            <section class="row">
                 <div class="col-md-3">
                     <strong>Use lower case:</strong>
                 </div>
                 <div class="col-md-9" id="useLowerCase">
 
                 </div>
-            </div>
-            <div class="row">
+            </section>
+            <section class="row">
                 <div class="col-md-3">
                     <strong>Use upper case:</strong>
                 </div>
                 <div class="col-md-9" id="useUpperCase">
 
                 </div>
-            </div>
-            <div class="row">
+            </section>
+            <section class="row">
                 <div class="col-md-3">
                     <strong>Use numerals:</strong>
                 </div>
                 <div class="col-md-9" id="useNumerals">
 
                 </div>
-            </div>
-            <div class="row">
+            </section>
+            <section class="row">
                 <div class="col-md-3">
                     <strong>Use special characters:</strong>
                 </div>
                 <div class="col-md-9" id="useSpecialCharacters">
 
                 </div>
-            </div>
+            </section>
             <!-- control buttons to generate password and reset criteria -->
-            <div class="row">
+            <section class="row">
                 <div class="col-md-12">
                     <button class="btn" onclick="generatePassword()">Generate Password</button>
                     <button class="btn" onclick="setCriteria()">Set Criteria</button>
                 </div>
-            </div>
-        </div>
+            </section>
+        </article>
         
-    </div>
+    </main>
     <!-- link bootstrap js and local js file -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>    
