@@ -1,5 +1,7 @@
+/* Import google font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+/* set body background image and stretch to fit screen, set text color and shadow for visibility */
 body{
     font-family: Roboto;
     background-image: url(../images/1140-fd-is-coding-boot-camp-for-you.imgcache.rev4c79daf5768ae52a73a46e372b5bc2b4.jpg);
@@ -9,29 +11,35 @@ body{
     text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.85);
 }
 
+/* ensure cursor is a pointer on all links - needed for copy link especially */
 a{
     cursor: pointer;
 }
 
+/* add white space */
 h1{
     margin: 30px auto;
 }
 
+/* add white space */
 h2{
     margin: 20px auto;
 }
 
+/* change button color to match theme */
 button{
     margin: 25px 8px 0 0;
     color: black;
     background-color: white !important;
 }
 
+/* nudge copy link placement */
 i{
     position: relative;
     top: -2px;
 }
 
+/* add glass effect to main div */
 .resultWindow{
     padding: 25px 50px;
     border: 0.1px solid rgba(255,255,255,0.2);

@@ -1,5 +1,4 @@
 // declare global variables for password criteria and set to user values
-// get criteria from user
 var passwordLength;
 var lowerCaseCriteria;
 var upperCaseCriteria;
@@ -13,8 +12,8 @@ var specialCharacters = ["!", "#", "$", "%", "&", "+", "@"];
 var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 function setCriteria() {
+
     // get criteria from user
-    
     passwordLength = parseInt(prompt("Enter password length."));
     lowerCaseCriteria = confirm("Use lower case digits.");
     upperCaseCriteria = confirm("Use upper case digits");
@@ -28,7 +27,7 @@ function setCriteria() {
     document.getElementById("useNumerals").innerHTML = numberCriteria;
     document.getElementById("useSpecialCharacters").innerHTML = specialCriteria;
 
-    // if invalid criteria set, call this function to try again
+    // if invalid criteria set, call setCriteria() again
     if(!checkCriteria() || !checkLength()){
         console.log("attempt to call setCriteria again.");
         setCriteria();
@@ -41,17 +40,22 @@ function setCriteria() {
 // main function loops through getDigit() passwordLength times
 function generatePassword() {
 
+    // check if user has set criteria yet - call setCriteria() if not
     if (passwordLength !== undefined) {
 
+        // declare empty variable to store password for use later
         var password = "";
 
         // Check to make sure user has selected at least 1 criteria and appropriate length 
         if (checkCriteria() && checkLength()) {
             // console.log("passwordLength: ", passwordLength)
 
-            // loop through and concat getDigit to password passwordLength times
+            // loop through and concat getDigit() to password passwordLength times
             for (var i = 0; i < passwordLength; i++) {
+
+                // store getDigit() result in a temporary variable for logging
                 var tempDigit = getDigit();
+                
                 // console.log("tempDigit: ", tempDigit);
                 password = password.concat(tempDigit);
             }
@@ -125,7 +129,12 @@ function getDigit() {
 // copy password to clipboard
 function copy() {
     var copyText = document.getElementById("passwordResult");
+    
+    // desktop syntax
     copyText.select();
+    
+    // mobile syntax
     copyText.setSelectionRange(0, 99999)
+    
     document.execCommand("copy");
 }
