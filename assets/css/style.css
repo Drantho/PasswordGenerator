@@ -19,11 +19,13 @@ a{
 /* add white space */
 h1{
     margin: 30px auto;
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.85);
 }
 
 /* add white space */
 h2{
     margin: 20px auto;
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.85);
 }
 
 /* change button color to match theme */
@@ -31,8 +33,17 @@ button{
     margin: 25px 8px 0 0;
     color: black;
     background-color: white !important;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.85);
 }
 
+textarea{
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.85);
+}
+
+
+p{
+    letter-spacing: 1.8px;
+}
 /* nudge copy link placement */
 i{
     position: relative;
@@ -44,8 +55,8 @@ i{
     padding: 25px 50px;
     border: 0.1px solid rgba(255,255,255,0.2);
     background-color: rgba(230,230,255,0.2);
-    backdrop-filter: blur(10px);
-    border-radius: 5px;;
+    backdrop-filter: blur(7px);
+    border-radius: 8px;;
     margin: 25px auto;
 }
 
