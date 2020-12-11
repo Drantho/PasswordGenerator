@@ -49,3 +49,10 @@ i{
     margin: 25px auto;
 }
 
+@media (max-width: 768px) {
+    i{
+        position: relative;
+        top: 8px;        
+    }
+}
+

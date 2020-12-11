@@ -1,3 +1,10 @@
+// declare buttons and add event listeners
+var generateBtn = document.querySelector("#generate");
+var setCriteriaBtn = document.querySelector("#setCriteria");
+
+generateBtn.addEventListener("click", function(){generatePassword()})
+setCriteriaBtn.addEventListener("click", function(){setCriteria()})
+
 // declare global variables for password criteria and set to user values
 var passwordLength;
 var lowerCaseCriteria;
