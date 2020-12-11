@@ -43,6 +43,7 @@ textarea{
 
 p{
     letter-spacing: 1.8px;
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.85);
 }
 /* nudge copy link placement */
 i{
@@ -58,6 +59,7 @@ i{
     backdrop-filter: blur(7px);
     border-radius: 8px;;
     margin: 25px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.79);
 }
 
 @media (max-width: 768px) {
